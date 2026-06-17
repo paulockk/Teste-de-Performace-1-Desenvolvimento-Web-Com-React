@@ -1,11 +1,16 @@
-import GerenciadorUsereducer from "../components/GerenciadorUsereducer";
-export default function Exercicio2() {
-  return (
-    <div className="p-6 m-10 border-2 border-gray-300 rounded ">
-        <h1 className="text-2xl font-bold">Exercício 2</h1>
-        <p className=" text-gray-600 p-3">Crie uma página com um componente igual ao do exercício anterior.
-Use useReducer para atualizar as propriedades do objeto quando os dados forem alterados.</p>
-     <GerenciadorUsereducer />
+export default function Ex2(){
+   
+    return(
+        <div className="min-h-screen bg-gradient-to-br from-blue-100 to-purple-200 flex flex-col items-center justify-center p-8 gap-6">
+      <h1 className="text-4xl font-bold text-gray-800 mb-4">
+        Exercício 2
+      </h1>
+       <p className="text-gray-600 text-lg text-center max-w-2xl border p-4 rounded-lg bg-white shadow-md">
+        Construa uma página simples que implemente um inline event.
+      </p>
+<button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onClick={() => alert("Botão clicado")}>
+  Clique Aqui
+</button>
     </div>
-  );
+    )
 }
